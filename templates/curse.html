@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="stylesheet" href="cstyle.css">
+    <link rel="stylesheet" href="{{ url_for("static", filename="/css/style.css") }}">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,18 +12,18 @@
     <title>Ogetto.exe</title>
     </head>
     <body>
-    <div class="item-KnMenu"><img src="KnMenu.png"></div>
-    <div class="item-KnAkk"><img src="KnAkk.svg"></div>
+    <div class="item-KnMenu"><img src={{ url_for("static", filename="img/KnMenu.png") }}></div>
+    <div class="item-KnAkk"><img src={{ url_for("static", filename="img/KnAkk.svg"}}></div>
     <div class="form">
         <div class="form-text">
             <p><div style=" text-shadow: 1px 1px 2px black; width: 440px;height: 0px;color: black;font-size: 40px;font-family: Montserrat;font-style: italic;font-weight: 500;word-wrap: break-word;">Курсы</div></p>
         </div>
-        <div class="item-image1"><img src="Logo.svg"></div>
+        <div class="item-image1"><img src={{ url_for("static", filename="img/Logo.svg") }}></div>
     </div>
         <div class="items">
             <div class="row">
                 <div class="item">
-                    <div class="item-image"><img src="Buffer.jpg">
+                    <div class="item-image"><img src={{ url_for("static", filename="img/Buffer.jpg") }}>
                         <div class="overlay-actions">
                             <div class="actions">
                             <a href="#"><i class="fa-solid fa-eye"></i> Посмотреть курс</a>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="item-image"><img src="Buffer.jpg">
+                    <div class="item-image"><img src={{ url_for("static", filename="img/Buffer.jpg") }}>
                         <div class="overlay-actions">
                             <div class="actions">
                             <a href="#"><i class="fa-solid fa-eye"></i> Посмотреть курс</a>
